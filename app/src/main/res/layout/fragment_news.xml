@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.news">
+
+    <!-- RecyclerView for the posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <!-- Suggest Button -->
+    <ImageButton
+        android:id="@+id/suggestImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="80dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="Suggest"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sugg" />
+
+    <!-- Saved Button -->
+    <ImageButton
+        android:id="@+id/savedImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="Saved"
+        android:scaleType="fitCenter"
+        android:src="@drawable/save1" />
+
+    <ImageButton
+        android:id="@+id/suggestedImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="144dp"
+        android:background="#00FFFFFF"
+
+        android:visibility="gone"
+        android:contentDescription="Suggest"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sugg" />
+</FrameLayout>

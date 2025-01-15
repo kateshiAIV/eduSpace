@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.quiz">
+
+    <ProgressBar
+        android:id="@+id/countdownBar"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progressDrawable="@drawable/gradient_progress"
+        tools:progress="60"></ProgressBar>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="52dp"
+        android:text="Question"
+        android:textAlignment="center"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/currentStreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:text=" "
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/longestStreak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="84dp"
+        android:text=" "
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cross"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="false"
+        app:lottie_speed="1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/failure_animation"
+        ></com.airbnb.lottie.LottieAnimationView>
+
+    <ImageButton
+        android:id="@+id/falseImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="False"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/delete_16206622" />
+
+
+    <ImageButton
+        android:id="@+id/leadersImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="False"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/info2" />
+
+    <ImageButton
+        android:id="@+id/trueImg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="True"
+        android:scaleType="fitCenter"
+        android:src="@drawable/check_5610944" />
+
+</FrameLayout>

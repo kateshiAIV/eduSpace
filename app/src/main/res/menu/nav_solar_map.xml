@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="news"
+        />
+    <item
+        android:id="@+id/star_map"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Star map"
+        />
+    <item
+        android:id="@+id/solar_map"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Solar map"
+        />
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Quiz"
+        />
+    <item
+        android:id="@+id/picture"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Picture"
+        />
+
+
+</menu>

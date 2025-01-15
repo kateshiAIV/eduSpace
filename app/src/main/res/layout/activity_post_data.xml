@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd_wallpaper_black_space_black_star_stars"
+    tools:context=".PostDataActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeaderPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Post Header"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Link to Original News -->
+    <TextView
+        android:id="@+id/tvOriginalLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Original"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="10"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderPost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Description of the post goes here."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvOriginalLink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvComments"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etNewComment" />
+
+
+    <!-- New Comment Input -->
+    <EditText
+        android:id="@+id/etNewComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#000000"
+        android:hint="Write a comment..."
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSendComment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Send Comment Button -->
+    <ImageButton
+        android:id="@+id/btnSendComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Send Comment"
+        android:src="@android:drawable/ic_menu_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

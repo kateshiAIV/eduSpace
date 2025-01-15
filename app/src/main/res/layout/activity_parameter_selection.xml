@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/hd_wallpaper_black_space_black_star_stars"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Planets and Moons"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planet Parameters" />
+
+        <EditText
+            android:id="@+id/input_semi_major_axis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semi-Major Axis (1200 - 5000 Suggested)" />
+
+        <EditText
+            android:id="@+id/input_eccentricity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Eccentricity (0.1 - 0.8 Suggested) "  />
+
+        <EditText
+            android:id="@+id/input_orbital_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Orbital Speed (0.005 - 0.02 Suggested)" />
+
+        <EditText
+            android:id="@+id/input_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Radius (10-200)" />
+        <EditText
+            android:id="@+id/input_nmbMoons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numbe of Moons" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_gravity="center">
+
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/planet_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+        <Button
+            android:id="@+id/btn_add_planet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:text="Add Planet" />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:text="Delete the last planet" />
+
+        <Button
+            android:id="@+id/btn_start_simulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:text="Start Simulation" />
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:text="Clear the list" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <clip android:drawable="@drawable/green_to_red_gradient" android:gravity="start" />
+    </item>
+</layer-list>

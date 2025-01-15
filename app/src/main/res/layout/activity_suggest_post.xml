@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestPostActivity"
+    android:background="@drawable/hd_wallpaper_black_space_black_star_stars"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggest a Post"
+        android:textSize="24dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Anonymous Option -->
+    <Switch
+        android:id="@+id/sAnonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Submit anonymously"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Link Input Field -->
+    <EditText
+        android:id="@+id/etHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/white"
+        android:hint="Enter the Topic"
+        app:layout_constraintTop_toBottomOf="@id/sAnonymous"
+        android:inputType="textUri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Message Input Field -->
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter the Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter the Link to the original"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Submit Button (ImageButton) aligned to the right -->
+    <ImageButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    app:layout_constraintTop_toBottomOf="@id/etLink"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="#00FFFFFF"
+    android:contentDescription="Saved"
+    android:scaleType="fitCenter"
+    android:src="@drawable/sugg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

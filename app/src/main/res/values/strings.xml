@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EduSpace</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="light_travel_result">The light has traveled %.2f light years since your registration.</string>
+    <string name="registration_duration">%1$d days, %2$d hours, %3$d minutes, %4$d seconds</string>
+</resources>

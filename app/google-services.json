@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "419151182892",
+    "project_id": "eduspace-c567f",
+    "storage_bucket": "eduspace-c567f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419151182892:android:1cb4f9e2e3c208ea1a2589",
+        "android_client_info": {
+          "package_name": "com.eduspace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8CZCRoXKEqOFAMlbSWO4K1iJFo_J78C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

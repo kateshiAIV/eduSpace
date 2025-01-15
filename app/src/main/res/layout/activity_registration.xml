@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd_wallpaper_black_space_black_star_stars"
+    tools:context=".Registration">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:hint="Userame" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repeat Password"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/mtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have an account? Login Here"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
